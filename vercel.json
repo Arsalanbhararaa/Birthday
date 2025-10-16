@@ -26,6 +26,6 @@
   ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
-  ],
-  "staticBuild": true
+  ]
+  // REMOVED: "staticBuild": true
 }
