@@ -1,16 +1,5 @@
 {
-  "build": {
-    "env": {
-      "VITE_PUBLIC_URL": "/"
-    }
-  },
   "headers": [
-    {
-      "source": "/_app/immutable/assets/(.*\\.js)",
-      "headers": [
-        { "key": "Content-Type", "value": "application/javascript" }
-      ]
-    },
     {
       "source": "/assets/(.*\\.js)",
       "headers": [
@@ -23,9 +12,5 @@
         { "key": "Content-Type", "value": "application/javascript" }
       ]
     }
-  ],
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
   ]
-  // REMOVED: "staticBuild": true
 }
